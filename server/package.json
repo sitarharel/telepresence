@@ -1,0 +1,14 @@
+{
+  "name": "telepresence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "Sitar Harel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
