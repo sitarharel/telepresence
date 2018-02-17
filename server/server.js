@@ -14,7 +14,9 @@ var robot_controls = {
 app.get('/robot/controls', (req, res) => res.send(JSON.stringify(robot_controls)))
 
 app.post('/robot/controls', (req, res) => {
-  console.log(JSON.stringify(req.body))
+  robot_controls.left = req.body.left;
+  robot_controls.right = req.body.right;
+  res.sendStatus(200);
 });
 
 app.use(express.static(__dirname + '/public'));
