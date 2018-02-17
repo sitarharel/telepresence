@@ -40,13 +40,13 @@ function downClick(e) {
 
 function leftClick(e) {
     pressed = true;
-    move(-1, 1);
+    move(1, -1);
     console.log('left')    
 }
 
 function rightClick(e) {
     pressed = true;
-    move(1, -1);
+    move(-1, 1);
     console.log('right')    
 }
 
